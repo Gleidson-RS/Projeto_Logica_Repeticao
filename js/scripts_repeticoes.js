@@ -57,3 +57,10 @@ const divForIn = document.querySelector('#div-forin')
 for(let posicao in presentes){
     divForIn.innerHTML += `${presentes[posicao]} <br>`
 }
+//FOR OF
+const divForOF = document.querySelector('#div-forof')
+
+for (let elemento of presentes){
+ divForOF.innerHTML += `${elemento} <br>`
+}
+
