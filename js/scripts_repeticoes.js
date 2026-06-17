@@ -26,4 +26,12 @@ btnNum.addEventListener('click', (evt)=>{
 })
 
 //CONTROLADOR FOR
+
 const inputFrase = document.querySelector('#frase')
+const inputNumRepeticao = document.querySelector('#num-repeticao')
+const btnFrase = document.querySelector('#btn-frase')
+const divFrase = document.querySelector('#div-frase')
+
+
+
+//divFrase.innerHTML =
