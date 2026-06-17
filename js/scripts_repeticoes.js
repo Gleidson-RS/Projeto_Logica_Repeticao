@@ -7,7 +7,7 @@ for(i = 0;i < 10; i++ ){
 }
 
 //CONTADOR/ACUMULADOR 
-const inputNum = document.querySelector('Num')
+const inputNum = document.querySelector('#num')
 const btnNum = document.querySelector('#btn-num')
 const divContAcum = document.querySelector('#div-cont-acum')
 
