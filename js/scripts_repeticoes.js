@@ -40,7 +40,10 @@ btnFrase.addEventListener('click', evt => {
     divFrase.innerHTML += `${i + 1} - ${frase} <br>`
    }
 })
+//COLEÇÃO DE DADOR ARRAY
+const presentes = ['Bicicleta', 'Celular', 'Camisa Do Mengão', 'Tênis da Abibas']
+
+const divArray = document.querySelector('#div-array')
 
 
-
-
+//FOR IN
