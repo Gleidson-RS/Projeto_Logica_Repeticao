@@ -69,12 +69,18 @@ presentes.forEach((elemento, posicao) =>{
     divForeach.innerHTML += `${posicao} - ${elemento} <br>`
 })
 
-
+//COLOÇÃO DE OBJETIVO LITERAIS - ARRAY
 const pessoas = [
-    {nome: 'Maria Flor', idade: 25, renda:1800},
-    {nome: 'Joerdson Souza', idade: 75, renda:5000},
-    {nome: 'Taoca', idade: 28, renda:500},
-    {nome: 'Chicó', idade: 36, renda:100},
-    {nome: 'João Grilo', idade: 36, renda:80},
-
+    {nome: 'Maria Flor', idade: 25, renda: 1800},
+    {nome: 'Joerdson Souza', idade: 75, renda: 5000},
+    {nome: 'Taoca', idade: 28, renda: 500},
+    {nome: 'Chicó', idade: 36, renda: 100},
+    {nome: 'João Grilo', idade: 36, renda: 80},
 ]
+
+//LISTANDO OBJETO LITERAL PELO FOR
+const divLitaObjFor = document.querySelector('#div-listaoj-for')
+
+for(i = 0; i < pessoas.length; i++){
+    divLitaObjFor.innerHTML += `${pessoas[i].nome}, ${pessoas[i].idade}, ${pessoas[i].renda.toFixed(2).replace('.', ',')}<br>` 
+}
