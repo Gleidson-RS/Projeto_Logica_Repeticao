@@ -37,7 +37,7 @@ btnFrase.addEventListener('click', evt => {
    let frase = inputFrase.value
 
    for (i = 0;i < NumRepeticao; i++ ){
-    divFrase.innerHTML += `${i + 1} - ${frase} <br>`
+    divFrase.innerHTML += `${frase} <br>`
    }
 })
 
