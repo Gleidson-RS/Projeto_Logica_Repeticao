@@ -41,9 +41,14 @@ btnFrase.addEventListener('click', evt => {
    }
 })
 //COLEÇÃO DE DADOR ARRAY
-const presentes = ['Bicicleta', 'Celular', 'Camisa Do Mengão', 'Tênis da Abibas']
+const presentes = ['Bicicleta', 'Celular', 'Camisa Do Mengão','Doleira', 'Tênis da Abibas']
 
 const divArray = document.querySelector('#div-array')
 
+
+
+for(i = 0;i < 5; i++){
+    divArray.innerHTML += `${presentes[i]} <br>`
+}
 
 //FOR IN
