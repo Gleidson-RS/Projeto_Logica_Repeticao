@@ -45,8 +45,6 @@ const presentes = ['Bicicleta', 'Celular', 'Camisa Do Mengão','Doleira', 'Têni
 
 const divArray = document.querySelector('#div-array')
 
-
-
 for(i = 0;i < 5; i++){
     divArray.innerHTML += `${presentes[i]} <br>`
 }
@@ -63,4 +61,11 @@ const divForOF = document.querySelector('#div-forof')
 for (let elemento of presentes){
  divForOF.innerHTML += `${elemento} <br>`
 }
+
+//FOREACH
+const divForeach = document.querySelector('#div-foraech')
+
+presentes.forEach((elemento, posicao) =>{
+    divForeach.innerHTML += `${posicao} - ${elemento} <br>`
+})
 

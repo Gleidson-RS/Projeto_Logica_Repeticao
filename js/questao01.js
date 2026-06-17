@@ -35,7 +35,7 @@ let NumDiv7 = 0
 let acum = 0.0
 acum += NumDiv7
 
-for(i = 0;i < 1000; i++){
+for(i = 7;i < 1000; i++){
 if(i % 7 == 0){
     console.log(i)
     divfor.innerHTML +=  `${i} <br>`
