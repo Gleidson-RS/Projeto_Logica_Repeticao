@@ -28,7 +28,7 @@ btnNum.addEventListener('click', (evt)=>{
 */
 
 
-const divfor = document.querySelector('#div-for')
+const divfor = document.querySelector('#div-Num7')
 
 let NumDiv7 = 0
 
