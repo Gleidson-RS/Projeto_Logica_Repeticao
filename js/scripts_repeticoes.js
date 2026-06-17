@@ -24,3 +24,6 @@ btnNum.addEventListener('click', (evt)=>{
 
     inputNum.value = ''
 })
+
+//CONTROLADOR FOR
+const inputFrase = document.querySelector('#frase')

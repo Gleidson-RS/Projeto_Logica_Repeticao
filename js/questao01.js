@@ -7,9 +7,9 @@ for(i = 0;i < 10; i++ ){
 }
 
 //CONTADOR/ACUMULADOR 
-const inputNum = document.querySelector('#num')
-const btnNum = document.querySelector('#btn-num')
-const divContAcum = document.querySelector('#div-cont-acum')
+const inputNum = document.querySelector('#num') //numero    
+const btnNum = document.querySelector('#btn-num') // numero digitado
+const divContAcum = document.querySelector('#div-cont-acum') // contador/acumulador
 
 let cont = 0
 let acum = 0.0
