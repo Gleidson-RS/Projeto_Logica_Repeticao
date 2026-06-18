@@ -1,27 +1,22 @@
 
+const inputNome = document.querySelector('#nome')
+const inputPeso = document.querySelector('#peso')
+
+document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault()
+
+let nome = inputNome.value
+let peso = Number(inputPeso.value)
+
+console.log(nome)
+console.log(peso)
+
+let cont = 0
+let acum = 0.0
+
+cont++
+acum += numDigitado
 
 
-
-
-
-
-
-
-
-
-
-const numero = document.querySelector('#div-numero')
-
-numero.addEventListener('submit', (evt)=>{
-    evt.preventDefault()
-
-
-const pessoas = [
-    {nome: 'Maria Flor', idade: 25, renda: 1800},
-    {nome: 'Joerdson Souza', idade: 75, renda: 5000},
-    {nome: 'Taoca', idade: 28, renda: 500},
-    {nome: 'Chicó', idade: 36, renda: 100},
-    {nome: 'João Grilo', idade: 36, renda: 80},
-]
 
 })
