@@ -103,3 +103,10 @@ for(let elem of pessoas){
 
     divLitaObjForOF.innerHTML += ` ${contForOF} - ${elem.nome}, ${elem.idade}, R$ ${elem.renda.toFixed(2).replace('.',',')} <br>`
 }
+
+//LISTANDO OBJETO LITERAL PELO FOREACH
+const divLitaObjForeach = document.querySelector('#div-listaobj-foreach')
+
+pessoas.forEach((elem, i)=>{
+    divLitaObjForeach.innerHTML += `${i + 1} - ${elem.nome}, ${elem.idade}, ${elem.renda.toFixed(2).replace('.',',')} <br>`
+})
