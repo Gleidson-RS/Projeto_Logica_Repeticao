@@ -40,7 +40,7 @@ btnFrase.addEventListener('click', evt => {
     divFrase.innerHTML += `${i + 1} - ${frase} <br>`
    }
 })
-//COLEÇÃO DE DADOR ARRAY
+//COLEÇÃO DE DADOS ARRAY
 const presentes = ['Bicicleta', 'Celular', 'Camisa Do Mengão','Doleira', 'Tênis da Abibas']
 
 const divArray = document.querySelector('#div-array')
@@ -79,8 +79,27 @@ const pessoas = [
 ]
 
 //LISTANDO OBJETO LITERAL PELO FOR
-const divLitaObjFor = document.querySelector('#div-listaoj-for')
+const divLitaObjFor = document.querySelector('#div-listaobj-for')
 
 for(i = 0; i < pessoas.length; i++){
     divLitaObjFor.innerHTML += `${pessoas[i].nome}, ${pessoas[i].idade}, ${pessoas[i].renda.toFixed(2).replace('.', ',')}<br>` 
+}
+
+//LISTANDO OBJETO LITERAL PELO FOR/IN
+const divLitaObjForIn = document.querySelector('#div-listaobj-forIn')
+
+for(let indice in pessoas){
+    divLitaObjForIn.innerHTML += `${indice} - ${pessoas[indice].nome}, ${pessoas[indice].idade}, ${pessoas[indice].renda.toFixed(2).replace('.',',')} <br>`
+
+}
+
+//LISTANDO OBJETO LITERAL PELO FOROF
+const divLitaObjForOF = document.querySelector('#div-listaobj-forof')
+
+let contForOF = 0
+
+for(let elem of pessoas){
+    contForOF++
+
+    divLitaObjForOF.innerHTML += ` ${contForOF} - ${elem.nome}, ${elem.idade}, R$ ${elem.renda.toFixed(2).replace('.',',')} <br>`
 }
