@@ -78,7 +78,7 @@ let contVolta = 0, numSorteado = 0, contPar = 0, contImpar = 0
 const sorteo = setInterval(() => {
     contVolta++ 
 
-numSorteado = parseInt(Math.random() * 19999)
+numSorteado = parseInt(Math.random() * 1000)
 
 console.log(`${contVolta}º número sorteado ${numSorteado}`)
 
@@ -89,7 +89,7 @@ if(numSorteado % 2 == 0){
 }
 divNumSorteio.innerHTML += `${contVolta}º número gerado ${numSorteado} - ${numSorteado % 2 == 0 ? 'par' : 'impar'} <br>`
 
-if (numSorteado == 10){
+if (numSorteado == 999){
     console.log('-----> sorteio encerrado <------')
     divNumSorteio.innerHTML += `-----> SORTEIO ENCERRADO <------
      <br>
@@ -109,7 +109,7 @@ if (numSorteado == 10){
 
 
 }
-}, 20);
+}, 9);
 
 const divNumSorteio = document.querySelector('#div-num-sorteio')
 
