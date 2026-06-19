@@ -78,14 +78,14 @@ let contVolta = 0, numSorteado = 0
 const sorteo = setInterval(() => {
     contVolta++ 
 
-numSorteado = parseInt(Math.random() * 10)
+numSorteado = parseInt(Math.random() * 100)
 
 console.log(`${contVolta}º número sorteado ${numSorteado}`)
 
 divNumSorteio.innerHTML += (`${contVolta}º número sorteado ${numSorteado} <br>`)
 
 
-if (numSorteado == 9){
+if (numSorteado == 90){
     console.log('SORTEIO INCERRADO')
     clearInterval(sorteo)
     contVolta = 0
@@ -93,7 +93,7 @@ if (numSorteado == 9){
 
 
 }
-}, 2);
+}, 20);
 
 const divNumSorteio = document.querySelector('#div-num-sorteio')
 
