@@ -23,4 +23,11 @@ const multiplicacao = function (num1, num2) {
 
 console.log('A multiplicação dos numero ', multiplicacao(64, 5))
 
+console.log('-----> ARROW FUNCTION <-----')
 
+const msgArrow = () => {
+    console.log(' Outra mensagem na Arrow function')
+
+}
+
+msgArrow()
