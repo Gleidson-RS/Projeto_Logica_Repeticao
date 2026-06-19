@@ -73,23 +73,39 @@ if (cont == 5){
 */
 
 
-let contVolta = 0, numSorteado = 0
+let contVolta = 0, numSorteado = 0, contPar = 0, contImpar = 0
 
 const sorteo = setInterval(() => {
     contVolta++ 
 
-numSorteado = parseInt(Math.random() * 100)
+numSorteado = parseInt(Math.random() * 19999)
 
 console.log(`${contVolta}º número sorteado ${numSorteado}`)
 
-divNumSorteio.innerHTML += (`${contVolta}º número sorteado ${numSorteado} <br>`)
+if(numSorteado % 2 == 0){
+    contPar++
+}else{
+    contImpar++
+}
+divNumSorteio.innerHTML += `${contVolta}º número gerado ${numSorteado} - ${numSorteado % 2 == 0 ? 'par' : 'impar'} <br>`
 
-
-if (numSorteado == 90){
-    console.log('SORTEIO INCERRADO')
+if (numSorteado == 10){
+    console.log('-----> sorteio encerrado <------')
+    divNumSorteio.innerHTML += `-----> SORTEIO ENCERRADO <------
+     <br>
+     total de numeros gerados: ${contVolta}<br>
+     total de numeros par ${contPar}<br>
+     total de numeros impar${contImpar}
+     `
     clearInterval(sorteo)
     contVolta = 0
     numSorteado = 0
+
+
+
+
+
+
 
 
 }

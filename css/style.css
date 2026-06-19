@@ -1,0 +1,66 @@
+/* Fundo geral */
+body {
+    background: #000;
+    color: #ff0000;
+    font-family: "Courier New", monospace;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Título */
+h1, h2, h3 {
+    color: #ff3333;
+    text-shadow: 0 0 5px #ff0000,
+                 0 0 10px #ff0000,
+                 0 0 20px #990000;
+    letter-spacing: 2px;
+}
+
+/* Texto principal */
+p, div {
+    color: #ff4444;
+    text-shadow: 0 0 3px #ff0000;
+    line-height: 1.6;
+}
+
+/* Efeito de cursor piscando */
+body::after {
+    content: "_";
+    animation: blink 1s infinite;
+    color: #ff0000;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Linhas de scan estilo monitor antigo */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0.05),
+        rgba(255, 0, 0, 0.05) 1px,
+        transparent 2px,
+        transparent 4px
+    );
+}
+
+/* Cada linha dos números */
+.linha {
+    margin: 3px 0;
+    padding-left: 10px;
+    border-left: 2px solid #550000;
+    transition: 0.2s;
+}
+
+.linha:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff0000;
+    transform: translateX(5px);
+}
