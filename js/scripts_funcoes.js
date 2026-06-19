@@ -1,3 +1,4 @@
+import { calculoPercentual } from './scripts_calculos.js'
 
 function mensagem() {
     console.log('Uma mensagem')
@@ -101,15 +102,12 @@ if (numSorteado == 999){
     contVolta = 0
     numSorteado = 0
 
-
-
-
-
-
-
-
 }
 }, 9);
 
 const divNumSorteio = document.querySelector('#div-num-sorteio')
+
+
+
+
 

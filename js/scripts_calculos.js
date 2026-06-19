@@ -17,3 +17,5 @@ const calculoPercentual = (valor) => {
 
     return valorCalculado
 }
+
+export{calculoPercentual}
