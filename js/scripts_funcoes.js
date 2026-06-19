@@ -73,7 +73,7 @@ if (cont == 5){
 }, 3000)
 */
 
-/*
+
 let contVolta = 0, numSorteado = 0, contPar = 0, contImpar = 0
 const divNumSorteio = document.querySelector('#div-num-sorteio')
 const sorteo = setInterval(() => {
@@ -90,7 +90,7 @@ if(numSorteado % 2 == 0){
 }
 divNumSorteio.innerHTML += `${contVolta}º número gerado ${numSorteado} - ${numSorteado % 2 == 0 ? 'par' : 'impar'} <br>`
 
-if (numSorteado == 5){
+if (numSorteado == 3){
     console.log('-----> sorteio encerrado <------')
     divNumSorteio.innerHTML += `-----> SORTEIO ENCERRADO <------
      <br>
@@ -104,11 +104,10 @@ if (numSorteado == 5){
 
 }
 }, 9);
-*/
+
 
 //CHAMANDO A FUNÇÃO DE OUTRO ARQUIVO
 console.log(`CALCULO DA FUNÇÃO calculoPercentual DO ARQUIVO script_calculos.js ----> `, calculoPercentual(750))
-
 
 
 
